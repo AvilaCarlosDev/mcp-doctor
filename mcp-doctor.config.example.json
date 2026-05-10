@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "echo": {
+      "command": "node",
+      "args": ["examples/echo-server.mjs"],
+      "cwd": "."
+    }
+  }
+}

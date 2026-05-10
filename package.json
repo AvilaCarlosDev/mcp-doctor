@@ -1,0 +1,33 @@
+{
+  "name": "mcp-doctor",
+  "version": "0.1.0",
+  "description": "A bilingual CLI doctor for MCP servers: validate, inspect, smoke test, and report.",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "lint": "tsc --noEmit",
+    "start": "node dist/cli.js"
+  },
+  "keywords": [],
+  "author": "Carlos Avila <https://github.com/AvilaCarlosDev>",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "mcp-doctor": "./dist/cli.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "commander": "^14.0.3",
+    "ora": "^9.4.0",
+    "picocolors": "^1.1.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.5"
+  }
+}
